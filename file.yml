@@ -1,11 +1,10 @@
 ---
-
-- name: Manage windows servers
+- name: Manage Windows File
   hosts: win_machine
   tasks:
-  - name: Create directory structure
-    ansible.windows.win_file:
-       path: C:\birkan2\master2
-       state: directory
+    - name: Create directory structure
+      ansible.windows.win_file:
+        path: C:\some\path
+        state: directory
 
 
